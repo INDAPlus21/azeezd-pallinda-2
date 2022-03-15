@@ -24,7 +24,7 @@ func main() {
 
 	wgp := new(sync.WaitGroup)
 	wgc := new(sync.WaitGroup)
-	
+
 	wgp.Add(producers)
 	wgc.Add(consumers)
 	for i := 0; i < producers; i++ {
